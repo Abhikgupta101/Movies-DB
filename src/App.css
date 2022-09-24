@@ -1,0 +1,221 @@
+/* SIGNUP CSS */
+
+.signup_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.885);
+  color: white;
+  overflow-y: hidden;
+}
+
+.signup_cont {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  height: 30rem;
+  overflow-y: hidden;
+}
+
+.signup_input {
+  width: 100%;
+  height: 5vh;
+  padding: 2%;
+  margin-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  outline: none;
+
+}
+
+.signup_file {
+  display: flex;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.signup_file_lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.325);
+  margin-bottom: 5%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.325);
+}
+
+/* NAVBAR CSS */
+
+.nav_container {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(128, 4, 4, 0.837);
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  z-index: 10;
+}
+
+.search_icon {
+  color: white;
+}
+
+.search_input {
+
+  flex: 0.5;
+}
+
+.nav_links {
+  color: white;
+  display: flex;
+  height: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+
+.links_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links_icons>div {
+  font-size: 10px;
+}
+
+
+.dropbtn {
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  flex: 0.3
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f75959;
+  color: white;
+  min-width: 100%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* MOVIES CSS */
+
+.movies_cont {
+  font-weight: bold;
+  color: white;
+  margin-top: 10vh;
+}
+
+
+.single_movie_cont {
+  overflow-x: hidden;
+  margin-top: 11vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: white;
+}
+
+.single_movie_img {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  width: 100vw;
+  height: 50vh;
+}
+
+.single_movie_info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 4vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  margin-bottom: 1vh;
+}
+
+/* FAVOURITE MOVIE CSS */
+
+.favmovie_cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vw;
+  height: 20vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.favmovie_info {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.favmovie_delete {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 600px) {
+
+  .signup_cont {
+    width: 80%;
+    height: 60%;
+  }
+
+  .search_input {
+    padding: 0px;
+    width: 100px;
+    outline: none;
+    font-size: 10px;
+  }
+
+  .nav_logo>img {
+    display: none
+  }
+
+  .links_icons>div {
+    font-size: 0px;
+  }
+}
